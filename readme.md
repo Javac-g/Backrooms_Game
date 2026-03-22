@@ -253,3 +253,13 @@ Recommended implementation order:
 8. Advanced generation and anomalies
 
 ---
+## Future Extensions
+
+- Advanced anomaly systems
+- Multi-level map visualization
+- Dynamic event system
+- Environmental storytelling
+- Additional entity behaviors
+- Sound-driven gameplay mechanics
+
+---
