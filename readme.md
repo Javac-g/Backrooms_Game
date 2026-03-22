@@ -193,5 +193,42 @@ Game logic is handled by systems:
 - Difficulty scaling
 
 ---
+## Minimap System
+
+The minimap is based on **player knowledge**, not full world data.
+
+Tracks:
+
+- Explored areas
+- Discovered rooms
+- Known transitions
+- Visible entities (optional)
+
+Supports multi-level exploration via an atlas model.
+
+---
+
+## Infinite Progression
+
+Progression is controlled through depth-based difficulty scaling:
+
+- Increased entity presence
+- More complex layouts
+- Higher anomaly frequency
+- Reduced resource availability
+
+---
+
+## Save System
+
+The game uses a hybrid persistence model:
+
+- Base state generated from seeds
+- Delta state stores player-induced changes
+
+This allows infinite worlds without excessive memory usage.
+
+---
+
 
 
