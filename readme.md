@@ -263,3 +263,7 @@ Recommended implementation order:
 - Sound-driven gameplay mechanics
 
 ---
+## License
+
+This project is an original work inspired by the Backrooms concept.
+All assets and systems should remain independent of third-party IP.
