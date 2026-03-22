@@ -230,5 +230,13 @@ This allows infinite worlds without excessive memory usage.
 
 ---
 
+## Design Philosophy
 
+- Less is more: minimal entities, maximum tension
+- Procedural does not mean random — structure is essential
+- Exploration must always feel meaningful
+- Mystery is preserved by avoiding over-explanation
+- Audio and atmosphere are primary gameplay elements
+
+---
 
