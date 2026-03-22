@@ -141,3 +141,57 @@ This dual structure allows both gameplay logic and meaningful procedural generat
 
 ---
 
+## Procedural Generation Pipeline
+
+1. Level descriptor creation
+2. Room graph generation
+3. Spatial layout construction
+4. Tile grid rasterization
+5. Semantic tagging
+6. Entity placement
+7. Item placement
+8. Transition placement
+9. Validation
+
+---
+
+## Gameplay Loop
+
+1. Player enters generated level
+2. Explores environment
+3. Discovers map and objects
+4. Collects items
+5. Avoids entities
+6. Finds transition to next level
+7. Descends deeper into the system
+
+---
+
+## Entity Model
+
+All in-world objects are represented as entities:
+
+- Player
+- Creatures
+- Items
+- Static objects
+
+Entities are state-driven and processed by simulation systems.
+
+---
+
+## Simulation Systems
+
+Game logic is handled by systems:
+
+- Movement and collision
+- Interaction handling
+- AI behavior
+- Exploration tracking
+- Spawn control
+- Level transitions
+- Difficulty scaling
+
+---
+
+
