@@ -111,4 +111,33 @@ config/
   SpawnTables
   ThemeDefinitions
 ```
+---
+
+## World Model
+
+The game world is composed of **independent procedural levels**.
+
+- Each level is generated from a deterministic seed
+- Only active levels are loaded in memory
+- Levels are connected through a transition graph
+- The world is effectively infinite
+
+---
+
+## Level Structure
+
+Each level consists of two layers:
+
+### Geometric Layer
+- Tile grid (walls, floors, doors, transitions)
+
+### Semantic Layer
+- Room types (office, corridor, storage, etc.)
+- Spawn zones
+- Loot zones
+- Anomaly zones
+
+This dual structure allows both gameplay logic and meaningful procedural generation.
+
+---
 
