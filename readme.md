@@ -40,3 +40,75 @@ The project follows a **data-driven, layered architecture**:
 ---
 
 ## Project Structure
+
+```
+core/
+  GameLoop
+  GameContext
+  GameState
+  SceneMode
+
+world/
+  WorldManager
+  LevelManager
+  LevelRepository
+  World
+  Level
+  WorldGraph
+  LevelTransition
+
+generation/
+  LevelGenerator
+  RoomGraphGenerator
+  LayoutGenerator
+  SpawnGenerator
+  LootGenerator
+  GenerationValidator
+  LevelDescriptor
+
+simulation/
+  SimulationEngine
+  MovementSystem
+  CollisionSystem
+  InteractionSystem
+  AISystem
+  ExplorationSystem
+  SpawnSystem
+  TransitionSystem
+  DifficultySystem
+
+entity/
+  Entity
+  Player
+  Creature
+  ItemEntity
+  StaticObject
+  EntityManager
+
+map/
+  ExplorationState
+  MinimapModel
+  AtlasModel
+  MapMarker
+  MapService
+
+render/
+  CameraController
+  LevelRenderer
+  EntityRenderer
+  MinimapRenderer
+  HudRenderer
+
+save/
+  SaveManager
+  WorldSnapshot
+  LevelDelta
+  SerializationService
+
+config/
+  GenerationConfig
+  DifficultyConfig
+  SpawnTables
+  ThemeDefinitions
+```
+
