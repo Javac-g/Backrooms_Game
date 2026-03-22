@@ -239,4 +239,17 @@ This allows infinite worlds without excessive memory usage.
 - Audio and atmosphere are primary gameplay elements
 
 ---
+## Development Approach
 
+Recommended implementation order:
+
+1. Core world and level model
+2. Basic procedural generation
+3. Movement and collision
+4. Level transitions
+5. Minimap system
+6. Entities and AI
+7. Persistence system
+8. Advanced generation and anomalies
+
+---
