@@ -1,5 +1,6 @@
-package com.company.core;
+package com.yourname.backrooms.core;
 
+import com.yourname.backrooms.render.GameCanvas;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
@@ -16,7 +17,10 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) {
-        StackPane root = new StackPane();
+        GameCanvas gameCanvas = new GameCanvas(WINDOW_WIDTH, WINDOW_HEIGHT);
+        gameCanvas.clear();
+
+        StackPane root = new StackPane(gameCanvas);
         Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT);
 
         stage.setTitle("Backrooms");
