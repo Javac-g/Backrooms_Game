@@ -1,4 +1,4 @@
-package com.yourname.backrooms.core;
+package com.company.core;
 
 import com.yourname.backrooms.render.GameCanvas;
 import javafx.application.Application;
@@ -18,7 +18,6 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) {
         GameCanvas gameCanvas = new GameCanvas(WINDOW_WIDTH, WINDOW_HEIGHT);
-        gameCanvas.clear();
 
         StackPane root = new StackPane(gameCanvas);
         Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -28,5 +27,8 @@ public class MainApp extends Application {
         stage.setMinWidth(800);
         stage.setMinHeight(600);
         stage.show();
+
+        GameLoop gameLoop = new GameLoop(gameCanvas);
+        gameLoop.start();
     }
 }
